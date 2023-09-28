@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Entregas [
+        <!ELEMENT Entregas (Pedidos)*>
+        <!ELEMENT Pedidos (Destinatarios)+>
+        <!ELEMENT Destinatarios (Destinatario,Articulos,DireccionEntrega,FechaEntrega)+>
+        <!ELEMENT Destinatario (#PCDATA)>
+        <!ELEMENT Articulos (Articulo)+>
+        <!ELEMENT Articulo (#PCDATA)>
+        <!ELEMENT DireccionEntrega (Calle,Numero,Piso,Letra)+>
+        <!ELEMENT Calle (#PCDATA)>
+        <!ELEMENT Numero (#PCDATA)>
+        <!ELEMENT Piso (#PCDATA)>
+        <!ELEMENT Letra (#PCDATA)>
+        <!ELEMENT FechaEntrega (Dia,Mes,Año)+>
+        <!ELEMENT Dia (#PCDATA)>
+        <!ELEMENT Mes (#PCDATA)>
+        <!ELEMENT Año (#PCDATA)>
+        ]>
+<Entregas>
+    <Pedidos>
+        <Destinatarios>
+            <Destinatario>Juan Delgado Martínez</Destinatario>
+            <Articulos>
+                <Articulo>Bicicleta Bianchi Oltre</Articulo>
+            </Articulos>
+            <DireccionEntrega>
+                <Calle>calle Reforma</Calle>
+                <Numero>423</Numero>
+                <Piso>tercer piso</Piso>
+                <Letra>A</Letra>
+            </DireccionEntrega>
+            <FechaEntrega>
+                <Dia>19</Dia>
+                <Mes>09</Mes>
+                <Año>2021</Año>
+            </FechaEntrega>
+        </Destinatarios>
+    </Pedidos>
+
+</Entregas>

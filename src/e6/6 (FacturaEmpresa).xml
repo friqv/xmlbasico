@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Factura [
+        <!ELEMENT Factura (BusinessContactInformation|DescriptionOfGoodsOrServices)*>
+        <!ELEMENT BusinessContactInformation (BusinessName|StreetAddress|CityStateZip|Email|Website|AddLogo|BillTo|ShipTo|InvoiceDetails|InvoiceNumber|Date|TermsOfPayment)*>
+        <!ELEMENT BusinessName (#PCDATA)>
+        <!ELEMENT StreetAddress (#PCDATA)>
+        <!ELEMENT CityStateZip (#PCDATA)>
+        <!ELEMENT Email (#PCDATA)>
+        <!ELEMENT Website (#PCDATA)>
+        <!ELEMENT AddLogo (#PCDATA)>
+        <!ELEMENT BillTo (ClientName|StreetAddress|CityStateZip)*>
+        <!ELEMENT ClientName (#PCDATA)>
+        <!ELEMENT ShipTo (ClientName|StreetAddress|CityStateZip)*>
+        <!ELEMENT InvoiceDetails (InvoiceNumber|InvoiceDate|Terms|DueDate)*>
+        <!ELEMENT InvoiceNumber (#PCDATA)>
+        <!ELEMENT InvoiceDate (#PCDATA)>
+        <!ELEMENT Terms (#PCDATA)>
+        <!ELEMENT DueDate (#PCDATA)>
+        <!ELEMENT Date (#PCDATA)>
+        <!ELEMENT TermsOfPayment (#PCDATA)>
+        <!ELEMENT DescriptionOfGoodsOrServices (ProductService1|ProductService2|AddItem)*>
+        <!ELEMENT ProductService1 (Description|QtyHrs|Rate|Amount)*>
+        <!ELEMENT Description (#PCDATA)>
+        <!ELEMENT QtyHrs (#PCDATA)>
+        <!ELEMENT Rate (#PCDATA)>
+        <!ELEMENT Amount (#PCDATA)>
+        <!ELEMENT ProductService2 (Description|QtyHrs|Rate|Amount)*>
+        <!ELEMENT AddItem (CustomerMessage|SalesTax|Shipping|Total)*>
+        <!ELEMENT CustomerMessage (#PCDATA)>
+        <!ELEMENT SalesTax (#PCDATA)>
+        <!ELEMENT Shipping (#PCDATA)>
+        <!ELEMENT Total (#PCDATA)>
+        ]>
+<Factura>
+    <BusinessContactInformation>
+        <BusinessName>(000) 000 - 000 </BusinessName>
+        <StreetAddress>Dirección </StreetAddress>
+        <CityStateZip>Ciudad, Estado, Código Postal</CityStateZip>
+        <Email>Email</Email>
+        <Website>Website</Website>
+        <AddLogo>Logo</AddLogo>
+
+        <BillTo>
+            <ClientName>Nombre del Cliente</ClientName>
+            <StreetAddress>Dirección del Cliente</StreetAddress>
+            <CityStateZip>Ciudad, Estado, Código Postal del Cliente</CityStateZip>
+        </BillTo>
+        <ShipTo>
+            <ClientName>Nombre del Envío</ClientName>
+            <StreetAddress>Dirección de Envío</StreetAddress>
+            <CityStateZip>Ciudad, Estado, Código Postal de Envío</CityStateZip>
+        </ShipTo>
+        <InvoiceDetails>
+            <InvoiceNumber>#12345</InvoiceNumber>
+            <InvoiceDate>mm/dd/yyyy</InvoiceDate>
+            <Terms>Net 30</Terms>
+            <DueDate>mm/dd/yyyy</DueDate>
+        </InvoiceDetails>
+
+        <InvoiceNumber>Número de Factura</InvoiceNumber>
+        <Date>Fecha</Date>
+        <TermsOfPayment>Términos de Pago</TermsOfPayment>
+
+    </BusinessContactInformation>
+
+    <DescriptionOfGoodsOrServices>
+        <ProductService1>
+            <Description> Describe tu producto o servicio</Description>
+            <QtyHrs>0</QtyHrs>
+            <Rate>0</Rate>
+            <Amount>0</Amount>
+        </ProductService1>
+
+        <ProductService2>
+            <Description> Describe tu producto o servicio</Description>
+            <QtyHrs>0</QtyHrs>
+            <Rate>0</Rate>
+            <Amount>0</Amount>
+        </ProductService2>
+    <AddItem>
+        <CustomerMessage>Gracias por su compra. Por favor devuelva esta factura con el pago.</CustomerMessage>
+        <SalesTax>0.00</SalesTax>
+        <Shipping>0.00</Shipping>
+        <Total>$0.00</Total>
+    </AddItem>
+    </DescriptionOfGoodsOrServices>
+</Factura>

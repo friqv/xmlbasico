@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE CDsOferta [
+        <!ELEMENT CDsOferta (Canciones)*>
+        <!ELEMENT Canciones (Cancion)*>
+        <!ELEMENT Cancion (Titulo,Artista,Pais,CompañiaDiscografica,Precio,AñoPublicacion)+>
+        <!ELEMENT Titulo (#PCDATA)>
+        <!ELEMENT Artista (#PCDATA)>
+        <!ELEMENT Pais (#PCDATA)>
+        <!ELEMENT CompañiaDiscografica (#PCDATA)>
+        <!ELEMENT Precio (#PCDATA)>
+        <!ELEMENT AñoPublicacion (#PCDATA)>
+        ]>
+<CDsOferta>
+    <Canciones>
+        <Cancion>
+            <Titulo>Still got the blues</Titulo>
+            <Artista>Gary Moore</Artista>
+            <Pais>UK</Pais>
+            <CompañiaDiscografica>Virgin records</CompañiaDiscografica>
+            <Precio>10.20</Precio>
+            <AñoPublicacion>1990</AñoPublicacion>
+        </Cancion>
+        <Cancion>
+            <Titulo>One night only</Titulo>
+            <Artista>Bee Gees</Artista>
+            <Pais>UK</Pais>
+            <CompañiaDiscografica>Polydor</CompañiaDiscografica>
+            <Precio>10.90</Precio>
+            <AñoPublicacion>1998</AñoPublicacion>
+        </Cancion>
+        <Cancion>
+            <Titulo>When a man loves a woman</Titulo>
+            <Artista>Percy Sledge</Artista>
+            <Pais>USA</Pais>
+            <CompañiaDiscografica>Atlantic</CompañiaDiscografica>
+            <Precio>8.70</Precio>
+            <AñoPublicacion>1987</AñoPublicacion>
+        </Cancion>
+        <Cancion>
+            <Titulo>Big Willie style</Titulo>
+            <Artista>Will Sith</Artista>
+            <Pais>USA</Pais>
+            <CompañiaDiscografica>Columbia</CompañiaDiscografica>
+            <Precio>9.90</Precio>
+            <AñoPublicacion>1997</AñoPublicacion>
+        </Cancion>
+        <Cancion>
+            <Titulo>La canción de Juan Perro</Titulo>
+            <Artista>Radio Futura</Artista>
+            <Pais>España</Pais>
+            <CompañiaDiscografica>Sony Music-Ariola</CompañiaDiscografica>
+            <Precio>9.90</Precio>
+            <AñoPublicacion>1987</AñoPublicacion>
+        </Cancion>
+        <Cancion>
+            <Titulo>The dock of the bay</Titulo>
+            <Artista>Otis Redding</Artista>
+            <Pais>USA</Pais>
+            <CompañiaDiscografica>Atlantic</CompañiaDiscografica>
+            <Precio>7.90</Precio>
+            <AñoPublicacion>1987</AñoPublicacion>
+        </Cancion>
+    </Canciones>
+</CDsOferta>

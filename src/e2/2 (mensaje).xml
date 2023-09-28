@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Mensaje [
+        <!ELEMENT Mensaje (Remitente|Destinatario|Asunto|Texto)*>
+        <!ELEMENT Remitente (Nombre|Email)*>
+        <!ELEMENT Nombre (#PCDATA)>
+        <!ELEMENT Email (#PCDATA)>
+        <!ELEMENT Destinatario (Nombre|Email)*>
+        <!ELEMENT Asunto (#PCDATA)>
+        <!ELEMENT Texto (parrafo)*>
+        <!ELEMENT parrafo (#PCDATA)>
+        ]>
+<Mensaje>
+    <Remitente>
+        <Nombre>Alfredo Reino</Nombre>
+        <Email> alf@ibium.com </Email>
+    </Remitente>
+    <Destinatario>
+        <Nombre>Bill Clinton</Nombre>
+        <Email>Presidente@whitehouse.gov</Email>
+    </Destinatario>
+    <Asunto> Hola, Bill </Asunto>
+    <Texto>
+        <parrafo>Hola, ¿qué tal?</parrafo>
+        <parrafo>Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.</parrafo>
+        <parrafo>Un saludo.</parrafo>
+    </Texto>
+</Mensaje>
